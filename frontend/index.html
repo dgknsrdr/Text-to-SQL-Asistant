@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Enterprise AI Copilot</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div>
+            <h1>Enterprise AI Copilot</h1>
+            <p>
+                Şirket verilerinizi doğal dil ile sorgulayın.
+            </p>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            AI Online
+        </div>
+    </header>
+
+
+    <main>
+
+        <div
+            id="messages"
+            class="messages"
+        >
+
+            <div class="message ai-message">
+
+                <div class="message-title">
+                    Enterprise AI
+                </div>
+
+                <div class="message-text">
+                    Merhaba. Şirket verileri hakkında bana soru sorabilirsiniz.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="examples">
+
+            <button
+                onclick="exampleQuestion(
+                    'Depoda en az bulunan ikinci ürünü getir'
+                )"
+            >
+                En düşük ikinci stok
+            </button>
+
+
+            <button
+                onclick="exampleQuestion(
+                    'En fazla sipariş veren müşteriyi getir'
+                )"
+            >
+                En çok sipariş
+            </button>
+
+
+            <button
+                onclick="exampleQuestion(
+                    'Ürünlerin ortalama fiyatı nedir?'
+                )"
+            >
+                Ortalama fiyat
+            </button>
+
+        </div>
+
+
+        <div class="input-area">
+
+            <textarea
+                id="question"
+                placeholder="Şirket AI'ına sorun..."
+                rows="1"
+            ></textarea>
+
+            <button
+                id="sendButton"
+                onclick="askQuestion()"
+            >
+                Gönder
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="/static/app.js"></script>
+
+</body>
+
+</html>

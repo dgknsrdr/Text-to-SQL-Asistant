@@ -1,0 +1,500 @@
+{"soru": "Fiyatı maksimum 15000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 15000;"}
+{"soru": "Stok seviyesi maksimum 25 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 25;"}
+{"soru": "dört adetten fazla kalan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock > 4;"}
+{"soru": "En çok on dört tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 14;"}
+{"soru": "Bütçesi 2000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 2000;"}
+{"soru": "on üç adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 13;"}
+{"soru": "Stoğu en az 19 ve fiyatı 3000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 19\nAND price < 3000;"}
+{"soru": "En az 2000, en fazla 3000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 2000 AND 3000;"}
+{"soru": "Stok seviyesi 6'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 6;"}
+{"soru": "Fiyatı minimum 6000 lira olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price >= 6000;"}
+{"soru": "Fiyatı minimum 3000 lira olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price >= 3000;"}
+{"soru": "Fiyat aralığı 15000-40000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 15000 AND 40000;"}
+{"soru": "Ofis kategorisinde stoğu en az 17 ve fiyatı 10000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 17\nAND price < 10000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 4 ve fiyatı 4000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 4\nAND price < 4000;"}
+{"soru": "Stok seviyesi 4-16 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 4 AND 16;"}
+{"soru": "dokuz bin liradan pahalı olanları bul.", "sql": "SELECT * FROM products WHERE price > 9000;"}
+{"soru": "5000 liradan daha yüksek fiyatlı ürünler hangileri?", "sql": "SELECT * FROM products WHERE price > 5000;"}
+{"soru": "yedi bin liradan pahalı olanları bul.", "sql": "SELECT * FROM products WHERE price > 7000;"}
+{"soru": "dört bin liranın altında fiyatlandırılmış ürünleri göster.", "sql": "SELECT * FROM products WHERE price < 4000;"}
+{"soru": "Fiyat etiketi 4000 TL'yi aşan ürünleri getir.", "sql": "SELECT * FROM products WHERE price > 4000;"}
+{"soru": "12 ile 19 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 12 AND 19;"}
+{"soru": "2. sıradaki az stoklu ürünü bul.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 1 OFFSET 1;"}
+{"soru": "Elde 7'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 7;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 13 ve fiyatı 9000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 13\nAND price < 9000;"}
+{"soru": "Elde 27'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 27;"}
+{"soru": "Hem stoğu 12'den az olmayan hem de fiyatı 18000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 12\nAND price < 18000;"}
+{"soru": "Ofis kategorisinde stoğu en az 20 ve fiyatı 1000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 20\nAND price < 1000;"}
+{"soru": "az stoklu ürünler arasında onuncu olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 1 OFFSET 9;"}
+{"soru": "Fiyat aralığı 7000-18000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 7000 AND 18000;"}
+{"soru": "4000 liradan daha yüksek fiyatlı ürünler hangileri?", "sql": "SELECT * FROM products WHERE price > 4000;"}
+{"soru": "23'i geçmeyen stok miktarına sahip ürünleri bul.", "sql": "SELECT * FROM products WHERE stock <= 23;"}
+{"soru": "otuz bin liranın altında fiyatlandırılmış ürünleri göster.", "sql": "SELECT * FROM products WHERE price < 30000;"}
+{"soru": "Salon kategorisinde stoğu en az 5 ve fiyatı 40000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 5\nAND price < 40000;"}
+{"soru": "Stok seviyesi 3-24 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 3 AND 24;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 11 ve fiyatı 50000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 11\nAND price < 50000;"}
+{"soru": "Fiyat aralığı 7000-50000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 7000 AND 50000;"}
+{"soru": "Stok miktarı 17 veya üzeri olup 30000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 17\nAND price < 30000;"}
+{"soru": "Hem stoğu 17'den az olmayan hem de fiyatı 3000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 17\nAND price < 3000;"}
+{"soru": "40000 lirayı geçmeyen değil, 40000 liradan ucuz ürünleri getir.", "sql": "SELECT * FROM products WHERE price < 40000;"}
+{"soru": "11 ile 30 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 11 AND 30;"}
+{"soru": "Stok seviyesi 28'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 28;"}
+{"soru": "Stok seviyesi 10'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 10;"}
+{"soru": "çok stoklu sıralamasında 1. ürünü göster.", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 1 OFFSET 0;"}
+{"soru": "Minimum 28 adet stoğu bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock >= 28;"}
+{"soru": "Hem stoğu 13'den az olmayan hem de fiyatı 6000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 13\nAND price < 6000;"}
+{"soru": "Stok seviyesi 5'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 5;"}
+{"soru": "En az on üç tane kalan ürünleri göster.", "sql": "SELECT * FROM products WHERE stock >= 13;"}
+{"soru": "Fiyat aralığı 8000-25000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 8000 AND 25000;"}
+{"soru": "Stok seviyesi maksimum 18 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 18;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 19 ve fiyatı 30000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 19\nAND price < 30000;"}
+{"soru": "Stok miktarı 12'in altında ya da fiyatı 9000 lirayı geçen ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock < 12\nOR price > 9000;"}
+{"soru": "iki adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 2;"}
+{"soru": "stoğu en fazla 7 ürünü listele.", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 7;"}
+{"soru": "Stok seviyesi 7'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 7;"}
+{"soru": "Stok seviyesi maksimum 5 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 5;"}
+{"soru": "Stok miktarı 1 veya üzeri olup 8000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 1\nAND price < 8000;"}
+{"soru": "Elde 2'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 2;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 18 ve fiyatı 20000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 18\nAND price < 20000;"}
+{"soru": "Elde 11'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 11;"}
+{"soru": "Stok seviyesi 16'in altında kalan ürünler hangileri?", "sql": "SELECT * FROM products WHERE stock < 16;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 12 ve fiyatı 18000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 12\nAND price < 18000;"}
+{"soru": "Stok seviyesi 5'i aşan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock > 5;"}
+{"soru": "Elde 13'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 13;"}
+{"soru": "Stoğu en az 12 ve fiyatı 1000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 12\nAND price < 1000;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 5 ve fiyatı 5000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 5\nAND price < 5000;"}
+{"soru": "Fiyatı maksimum 2000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 2000;"}
+{"soru": "Stok seviyesi 2'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 2;"}
+{"soru": "7'i geçmeyen stok miktarına sahip ürünleri bul.", "sql": "SELECT * FROM products WHERE stock <= 7;"}
+{"soru": "Stok seviyesi 26'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 26;"}
+{"soru": "Elde 9'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 9;"}
+{"soru": "yirmi bin liranın altında fiyatlandırılmış ürünleri göster.", "sql": "SELECT * FROM products WHERE price < 20000;"}
+{"soru": "on beş adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 15;"}
+{"soru": "40000 lirayı aşmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price <= 40000;"}
+{"soru": "Salon kategorisinde stoğu en az 1 ve fiyatı 3000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 1\nAND price < 3000;"}
+{"soru": "Salon kategorisinde stoğu en az 17 ve fiyatı 30000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 17\nAND price < 30000;"}
+{"soru": "6 ile 21 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 6 AND 21;"}
+{"soru": "Salon kategorisinde stoğu en az 10 ve fiyatı 20000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 10\nAND price < 20000;"}
+{"soru": "Salon kategorisinde stoğu en az 1 ve fiyatı 8000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 1\nAND price < 8000;"}
+{"soru": "En çok yedi tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 7;"}
+{"soru": "pahalı sıralamasında 9. ürünü göster.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 8;"}
+{"soru": "Stoğu 1'den az veya fiyatı 15000 TL'den fazla ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock < 1\nOR price > 15000;"}
+{"soru": "Fiyatı maksimum 5000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 5000;"}
+{"soru": "ikinci az stoklu ürün hangisi?", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 1 OFFSET 1;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 1 ve fiyatı 20000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 1\nAND price < 20000;"}
+{"soru": "Stok seviyesi 21'in altında kalan ürünler hangileri?", "sql": "SELECT * FROM products WHERE stock < 21;"}
+{"soru": "20000 lirayı aşmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price <= 20000;"}
+{"soru": "24 adetten fazla kalan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock > 24;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 19 ve fiyatı 12000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 19\nAND price < 12000;"}
+{"soru": "Minimum 11 adet stoğu bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock >= 11;"}
+{"soru": "stoğu en az ilk 8 ürünü bul.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 8;"}
+{"soru": "En az 2000, en fazla 9000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 2000 AND 9000;"}
+{"soru": "6000 liradan daha yüksek fiyatlı ürünler hangileri?", "sql": "SELECT * FROM products WHERE price > 6000;"}
+{"soru": "Stok seviyesi 23'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 23;"}
+{"soru": "En az 10000, en fazla 25000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 10000 AND 25000;"}
+{"soru": "Minimum 20 adet stoğu bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock >= 20;"}
+{"soru": "Stoğu 4'den az veya fiyatı 20000 TL'den fazla ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock < 4\nOR price > 20000;"}
+{"soru": "çok stoklu ürünler arasında beşinci olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 1 OFFSET 4;"}
+{"soru": "Stok miktarı 14'in altında ya da fiyatı 7000 lirayı geçen ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock < 14\nOR price > 7000;"}
+{"soru": "pahalı ürünler arasında birinci olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 0;"}
+{"soru": "Hem stoğu 14'den az olmayan hem de fiyatı 10000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 14\nAND price < 10000;"}
+{"soru": "Stok seviyesi 4'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 4;"}
+{"soru": "Salon kategorisinde stoğu en az 18 ve fiyatı 18000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 18\nAND price < 18000;"}
+{"soru": "Stok miktarı 8 veya üzeri olup 5000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 8\nAND price < 5000;"}
+{"soru": "En az 8000, en fazla 10000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 8000 AND 10000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 19 ve fiyatı 6000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 19\nAND price < 6000;"}
+{"soru": "Stok seviyesi 1'in altında kalan ürünler hangileri?", "sql": "SELECT * FROM products WHERE stock < 1;"}
+{"soru": "pahalı ürünler arasında onuncu olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 9;"}
+{"soru": "Stoğu en az 11 ve fiyatı 50000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 11\nAND price < 50000;"}
+{"soru": "5 ile 24 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 5 AND 24;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 1 ve fiyatı 1000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 1\nAND price < 1000;"}
+{"soru": "Fiyat aralığı 6000-30000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 6000 AND 30000;"}
+{"soru": "Fiyat aralığı 1000-15000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 1000 AND 15000;"}
+{"soru": "Stoğu 18'den az veya fiyatı 9000 TL'den fazla ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock < 18\nOR price > 9000;"}
+{"soru": "az stoklu sıralamasında 1. ürünü göster.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 1 OFFSET 0;"}
+{"soru": "12 ile 28 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 12 AND 28;"}
+{"soru": "Ofis kategorisinde stoğu en az 3 ve fiyatı 8000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 3\nAND price < 8000;"}
+{"soru": "Elde 3'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 3;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 2 ve fiyatı 30000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 2\nAND price < 30000;"}
+{"soru": "Stoğu en az 10 ve fiyatı 12000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 10\nAND price < 12000;"}
+{"soru": "Stok seviyesi 12'in altında kalan ürünler hangileri?", "sql": "SELECT * FROM products WHERE stock < 12;"}
+{"soru": "24'i geçmeyen stok miktarına sahip ürünleri bul.", "sql": "SELECT * FROM products WHERE stock <= 24;"}
+{"soru": "5'i geçmeyen stok miktarına sahip ürünleri bul.", "sql": "SELECT * FROM products WHERE stock <= 5;"}
+{"soru": "pahalı ürünler arasında ikinci olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 1;"}
+{"soru": "Salon kategorisinde stoğu en az 11 ve fiyatı 5000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 11\nAND price < 5000;"}
+{"soru": "Salon kategorisinde stoğu en az 8 ve fiyatı 15000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 8\nAND price < 15000;"}
+{"soru": "Ofis kategorisinde stoğu en az 14 ve fiyatı 40000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 14\nAND price < 40000;"}
+{"soru": "ucuz sıralamasında 9. ürünü göster.", "sql": "SELECT *\nFROM products\nORDER BY price ASC\nLIMIT 1 OFFSET 8;"}
+{"soru": "2. sıradaki çok stoklu ürünü bul.", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 1 OFFSET 1;"}
+{"soru": "Salon kategorisinde stoğu en az 10 ve fiyatı 40000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 10\nAND price < 40000;"}
+{"soru": "Elde 20'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 20;"}
+{"soru": "En az bir tane kalan ürünleri göster.", "sql": "SELECT * FROM products WHERE stock >= 1;"}
+{"soru": "15 ile 21 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 15 AND 21;"}
+{"soru": "bir adetten fazla kalan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock > 1;"}
+{"soru": "beş bin liradan pahalı olanları bul.", "sql": "SELECT * FROM products WHERE price > 5000;"}
+{"soru": "3 ile 20 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 3 AND 20;"}
+{"soru": "Hem stoğu 17'den az olmayan hem de fiyatı 40000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 17\nAND price < 40000;"}
+{"soru": "28 adetten fazla kalan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock > 28;"}
+{"soru": "Bütçesi 12000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 12000;"}
+{"soru": "Stok miktarı 6'in altında ya da fiyatı 8000 lirayı geçen ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock < 6\nOR price > 8000;"}
+{"soru": "En az 5000, en fazla 8000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 5000 AND 8000;"}
+{"soru": "pahalı ürünler arasında üçüncü olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 2;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 8 ve fiyatı 40000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 8\nAND price < 40000;"}
+{"soru": "Ofis kategorisinde stoğu en az 15 ve fiyatı 9000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 15\nAND price < 9000;"}
+{"soru": "En az 1000, en fazla 50000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 1000 AND 50000;"}
+{"soru": "sekizinci çok stoklu ürün hangisi?", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 1 OFFSET 7;"}
+{"soru": "Salon kategorisinde stoğu en az 14 ve fiyatı 9000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 14\nAND price < 9000;"}
+{"soru": "Fiyat aralığı 18000-20000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 18000 AND 20000;"}
+{"soru": "Stoğu en az 12 ve fiyatı 6000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 12\nAND price < 6000;"}
+{"soru": "Minimum 1 adet stoğu bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock >= 1;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 6 ve fiyatı 12000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 6\nAND price < 12000;"}
+{"soru": "28 adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 28;"}
+{"soru": "Minimum 17 adet stoğu bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock >= 17;"}
+{"soru": "pahalı ürünler arasında yedinci olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 6;"}
+{"soru": "Stok seviyesi 6'i aşan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock > 6;"}
+{"soru": "12000 TL'nin altında olmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price >= 12000;"}
+{"soru": "dokuzuncu pahalı ürün hangisi?", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 8;"}
+{"soru": "Stok seviyesi 27'in altında kalan ürünler hangileri?", "sql": "SELECT * FROM products WHERE stock < 27;"}
+{"soru": "Stok seviyesi 14'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 14;"}
+{"soru": "Stoğu en az 13 ve fiyatı 6000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 13\nAND price < 6000;"}
+{"soru": "Stoğu en az 12 ve fiyatı 5000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 12\nAND price < 5000;"}
+{"soru": "Ofis kategorisinde stoğu en az 10 ve fiyatı 20000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 10\nAND price < 20000;"}
+{"soru": "Stok miktarı 15 veya üzeri olup 7000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 15\nAND price < 7000;"}
+{"soru": "Elde 14'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 14;"}
+{"soru": "Stok seviyesi 5'in altında kalan ürünler hangileri?", "sql": "SELECT * FROM products WHERE stock < 5;"}
+{"soru": "Ofis kategorisinde stoğu en az 19 ve fiyatı 4000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 19\nAND price < 4000;"}
+{"soru": "Stoğu 8'den az veya fiyatı 20000 TL'den fazla ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock < 8\nOR price > 20000;"}
+{"soru": "11 ile 26 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 11 AND 26;"}
+{"soru": "Stok seviyesi 8'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 8;"}
+{"soru": "Stok miktarı 15 veya üzeri olup 3000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 15\nAND price < 3000;"}
+{"soru": "En az 1000, en fazla 30000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 1000 AND 30000;"}
+{"soru": "Fiyat etiketi 7000 TL'yi aşan ürünleri getir.", "sql": "SELECT * FROM products WHERE price > 7000;"}
+{"soru": "Stok miktarı 5 veya üzeri olup 8000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 5\nAND price < 8000;"}
+{"soru": "1. sıradaki ucuz ürünü bul.", "sql": "SELECT *\nFROM products\nORDER BY price ASC\nLIMIT 1 OFFSET 0;"}
+{"soru": "Stoğu en az 16 ve fiyatı 4000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 16\nAND price < 4000;"}
+{"soru": "Stok seviyesi 1-25 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 1 AND 25;"}
+{"soru": "Fiyatı maksimum 1000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 1000;"}
+{"soru": "beş adetten fazla kalan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock > 5;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 2 ve fiyatı 4000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 2\nAND price < 4000;"}
+{"soru": "üçüncü çok stoklu ürün hangisi?", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 1 OFFSET 2;"}
+{"soru": "En çok on beş tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 15;"}
+{"soru": "En çok bir tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 1;"}
+{"soru": "Stok seviyesi 29'in altında kalan ürünler hangileri?", "sql": "SELECT * FROM products WHERE stock < 29;"}
+{"soru": "sekiz bin liradan pahalı olanları bul.", "sql": "SELECT * FROM products WHERE price > 8000;"}
+{"soru": "Salon kategorisinde stoğu en az 15 ve fiyatı 1000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 15\nAND price < 1000;"}
+{"soru": "Stok seviyesi 3-20 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 3 AND 20;"}
+{"soru": "Elde 4'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 4;"}
+{"soru": "Salon kategorisinde stoğu en az 3 ve fiyatı 40000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 3\nAND price < 40000;"}
+{"soru": "Fiyat aralığı 5000-6000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 5000 AND 6000;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 2 ve fiyatı 10000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 2\nAND price < 10000;"}
+{"soru": "3000 lirayı aşmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price <= 3000;"}
+{"soru": "on yedi adetten fazla kalan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock > 17;"}
+{"soru": "Ofis kategorisinde stoğu en az 2 ve fiyatı 9000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 2\nAND price < 9000;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 10 ve fiyatı 40000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 10\nAND price < 40000;"}
+{"soru": "Salon kategorisinde stoğu en az 20 ve fiyatı 12000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 20\nAND price < 12000;"}
+{"soru": "Bütçesi 9000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 9000;"}
+{"soru": "8 ile 17 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 8 AND 17;"}
+{"soru": "25000 lirayı geçmeyen değil, 25000 liradan ucuz ürünleri getir.", "sql": "SELECT * FROM products WHERE price < 25000;"}
+{"soru": "En az 15000, en fazla 30000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 15000 AND 30000;"}
+{"soru": "29 adetten fazla kalan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock > 29;"}
+{"soru": "Elde 21'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 21;"}
+{"soru": "Stok miktarı 5 veya üzeri olup 2000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 5\nAND price < 2000;"}
+{"soru": "Fiyat aralığı 7000-8000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 7000 AND 8000;"}
+{"soru": "Stok seviyesi 14-27 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 14 AND 27;"}
+{"soru": "Stok seviyesi maksimum 17 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 17;"}
+{"soru": "Stok seviyesi 20'i aşan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock > 20;"}
+{"soru": "Stok seviyesi 16'i aşan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock > 16;"}
+{"soru": "6. sıradaki az stoklu ürünü bul.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 1 OFFSET 5;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 12 ve fiyatı 4000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 12\nAND price < 4000;"}
+{"soru": "Stok seviyesi 3-7 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 3 AND 7;"}
+{"soru": "En az 12000, en fazla 15000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 12000 AND 15000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 18 ve fiyatı 2000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 18\nAND price < 2000;"}
+{"soru": "Fiyatı maksimum 9000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 9000;"}
+{"soru": "Stoğu en az 10 ve fiyatı 15000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 10\nAND price < 15000;"}
+{"soru": "Fiyat aralığı 2000-8000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 2000 AND 8000;"}
+{"soru": "Fiyatı maksimum 25000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 25000;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 2 ve fiyatı 9000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 2\nAND price < 9000;"}
+{"soru": "15000 lirayı geçmeyen değil, 15000 liradan ucuz ürünleri getir.", "sql": "SELECT * FROM products WHERE price < 15000;"}
+{"soru": "2 ile 14 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 2 AND 14;"}
+{"soru": "Stoğu 13'den az veya fiyatı 2000 TL'den fazla ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock < 13\nOR price > 2000;"}
+{"soru": "Stok miktarı 2 veya üzeri olup 50000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 2\nAND price < 50000;"}
+{"soru": "Bütçesi 1000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 1000;"}
+{"soru": "Stok miktarı 11 veya üzeri olup 4000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 11\nAND price < 4000;"}
+{"soru": "Ofis kategorisinde stoğu en az 15 ve fiyatı 8000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 15\nAND price < 8000;"}
+{"soru": "en pahalı 2 ürünü listele.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 2;"}
+{"soru": "Minimum 9 adet stoğu bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock >= 9;"}
+{"soru": "Fiyatı minimum 15000 lira olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price >= 15000;"}
+{"soru": "Salon kategorisinde stoğu en az 4 ve fiyatı 18000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 4\nAND price < 18000;"}
+{"soru": "En çok sekiz tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 8;"}
+{"soru": "on iki adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 12;"}
+{"soru": "Hem stoğu 1'den az olmayan hem de fiyatı 6000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 1\nAND price < 6000;"}
+{"soru": "Stoğu en az 16 ve fiyatı 18000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 16\nAND price < 18000;"}
+{"soru": "2000 lirayı geçmeyen değil, 2000 liradan ucuz ürünleri getir.", "sql": "SELECT * FROM products WHERE price < 2000;"}
+{"soru": "en pahalı 9 ürünü listele.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 9;"}
+{"soru": "Stok seviyesi 13'in altında kalan ürünler hangileri?", "sql": "SELECT * FROM products WHERE stock < 13;"}
+{"soru": "14 ile 16 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 14 AND 16;"}
+{"soru": "Stok miktarı 7 veya üzeri olup 7000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 7\nAND price < 7000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 16 ve fiyatı 5000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 16\nAND price < 5000;"}
+{"soru": "Stok miktarı 8'in altında ya da fiyatı 30000 lirayı geçen ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock < 8\nOR price > 30000;"}
+{"soru": "8000 liradan daha yüksek fiyatlı ürünler hangileri?", "sql": "SELECT * FROM products WHERE price > 8000;"}
+{"soru": "az stoklu sıralamasında 5. ürünü göster.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 1 OFFSET 4;"}
+{"soru": "Bütçesi 5000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 5000;"}
+{"soru": "Salon kategorisinde stoğu en az 14 ve fiyatı 2000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 14\nAND price < 2000;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 17 ve fiyatı 5000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 17\nAND price < 5000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 9 ve fiyatı 12000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 9\nAND price < 12000;"}
+{"soru": "Stoğu en az 2 ve fiyatı 20000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 2\nAND price < 20000;"}
+{"soru": "Stoğu en az 6 ve fiyatı 2000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 6\nAND price < 2000;"}
+{"soru": "Hem stoğu 6'den az olmayan hem de fiyatı 5000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 6\nAND price < 5000;"}
+{"soru": "on iki bin liradan pahalı olanları bul.", "sql": "SELECT * FROM products WHERE price > 12000;"}
+{"soru": "Stok seviyesi 12-25 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 12 AND 25;"}
+{"soru": "Ofis kategorisinde stoğu en az 10 ve fiyatı 3000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 10\nAND price < 3000;"}
+{"soru": "Elde 24'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 24;"}
+{"soru": "Ofis kategorisinde stoğu en az 1 ve fiyatı 12000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 1\nAND price < 12000;"}
+{"soru": "Stoğu en az 9 ve fiyatı 4000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 9\nAND price < 4000;"}
+{"soru": "12000 lirayı geçmeyen değil, 12000 liradan ucuz ürünleri getir.", "sql": "SELECT * FROM products WHERE price < 12000;"}
+{"soru": "bin liranın altında fiyatlandırılmış ürünleri göster.", "sql": "SELECT * FROM products WHERE price < 1000;"}
+{"soru": "2'i geçmeyen stok miktarına sahip ürünleri bul.", "sql": "SELECT * FROM products WHERE stock <= 2;"}
+{"soru": "Stok seviyesi 2-10 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 2 AND 10;"}
+{"soru": "çok stoklu sıralamasında 5. ürünü göster.", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 1 OFFSET 4;"}
+{"soru": "En az 3000, en fazla 40000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 3000 AND 40000;"}
+{"soru": "Elde 30'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 30;"}
+{"soru": "Stok miktarı 19 veya üzeri olup 5000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 19\nAND price < 5000;"}
+{"soru": "Bütçesi 8000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 8000;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 18 ve fiyatı 25000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 18\nAND price < 25000;"}
+{"soru": "Stok miktarı 7'in altında ya da fiyatı 1000 lirayı geçen ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock < 7\nOR price > 1000;"}
+{"soru": "En çok 27 tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 27;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 13 ve fiyatı 20000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 13\nAND price < 20000;"}
+{"soru": "Stoğu 8'den az veya fiyatı 6000 TL'den fazla ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock < 8\nOR price > 6000;"}
+{"soru": "4 ile 13 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 4 AND 13;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 7 ve fiyatı 10000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 7\nAND price < 10000;"}
+{"soru": "Stok seviyesi 17'i aşan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock > 17;"}
+{"soru": "Ofis kategorisinde stoğu en az 6 ve fiyatı 4000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 6\nAND price < 4000;"}
+{"soru": "Elde 24'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 24;"}
+{"soru": "Fiyatı minimum 18000 lira olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price >= 18000;"}
+{"soru": "Salon kategorisinde stoğu en az 1 ve fiyatı 5000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 1\nAND price < 5000;"}
+{"soru": "26 adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 26;"}
+{"soru": "on dört adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 14;"}
+{"soru": "3. sıradaki ucuz ürünü bul.", "sql": "SELECT *\nFROM products\nORDER BY price ASC\nLIMIT 1 OFFSET 2;"}
+{"soru": "4. sıradaki çok stoklu ürünü bul.", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 1 OFFSET 3;"}
+{"soru": "pahalı sıralamasında 10. ürünü göster.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 9;"}
+{"soru": "Fiyatı minimum 10000 lira olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price >= 10000;"}
+{"soru": "Stoğu en az 9 ve fiyatı 40000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 9\nAND price < 40000;"}
+{"soru": "Stok miktarı 10'in altında ya da fiyatı 20000 lirayı geçen ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock < 10\nOR price > 20000;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 1 ve fiyatı 6000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 1\nAND price < 6000;"}
+{"soru": "En az 3000, en fazla 10000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 3000 AND 10000;"}
+{"soru": "Stoğu en az 5 ve fiyatı 2000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 5\nAND price < 2000;"}
+{"soru": "Fiyatı minimum 25000 lira olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price >= 25000;"}
+{"soru": "Stok seviyesi 14-22 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 14 AND 22;"}
+{"soru": "Salon kategorisinde stoğu en az 15 ve fiyatı 10000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 15\nAND price < 10000;"}
+{"soru": "pahalı sıralamasında 6. ürünü göster.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 5;"}
+{"soru": "Stok seviyesi maksimum 11 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 11;"}
+{"soru": "Hem stoğu 8'den az olmayan hem de fiyatı 8000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 8\nAND price < 8000;"}
+{"soru": "üç adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 3;"}
+{"soru": "9000 liradan daha yüksek fiyatlı ürünler hangileri?", "sql": "SELECT * FROM products WHERE price > 9000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 7 ve fiyatı 10000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 7\nAND price < 10000;"}
+{"soru": "sekiz bin liranın altında fiyatlandırılmış ürünleri göster.", "sql": "SELECT * FROM products WHERE price < 8000;"}
+{"soru": "dördüncü pahalı ürün hangisi?", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 3;"}
+{"soru": "Fiyat aralığı 4000-7000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 4000 AND 7000;"}
+{"soru": "kırk bin liradan pahalı olanları bul.", "sql": "SELECT * FROM products WHERE price > 40000;"}
+{"soru": "En az 7000, en fazla 50000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 7000 AND 50000;"}
+{"soru": "En çok üç tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 3;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 19 ve fiyatı 9000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 19\nAND price < 9000;"}
+{"soru": "Fiyatı maksimum 12000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 12000;"}
+{"soru": "10000 lirayı aşmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price <= 10000;"}
+{"soru": "Stoğu en az 12 ve fiyatı 7000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 12\nAND price < 7000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 16 ve fiyatı 2000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 16\nAND price < 2000;"}
+{"soru": "Bütçesi 20000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 20000;"}
+{"soru": "18000 lirayı geçmeyen değil, 18000 liradan ucuz ürünleri getir.", "sql": "SELECT * FROM products WHERE price < 18000;"}
+{"soru": "En az 20000, en fazla 40000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 20000 AND 40000;"}
+{"soru": "Stoğu 3'den az veya fiyatı 15000 TL'den fazla ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock < 3\nOR price > 15000;"}
+{"soru": "Fiyat aralığı 2000-30000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 2000 AND 30000;"}
+{"soru": "Stok miktarı 6 veya üzeri olup 30000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 6\nAND price < 30000;"}
+{"soru": "Fiyatı maksimum 20000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 20000;"}
+{"soru": "en ucuz 8 ürünü listele.", "sql": "SELECT *\nFROM products\nORDER BY price ASC\nLIMIT 8;"}
+{"soru": "Elde 4'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 4;"}
+{"soru": "7 ile 11 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 7 AND 11;"}
+{"soru": "En az otuz tane kalan ürünleri göster.", "sql": "SELECT * FROM products WHERE stock >= 30;"}
+{"soru": "Stok miktarı 16 veya üzeri olup 6000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 16\nAND price < 6000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 2 ve fiyatı 25000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 2\nAND price < 25000;"}
+{"soru": "stoğu en az 8 ürünü listele.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 8;"}
+{"soru": "az stoklu ürünler arasında ikinci olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 1 OFFSET 1;"}
+{"soru": "12 ile 13 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 12 AND 13;"}
+{"soru": "En az 7000, en fazla 18000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 7000 AND 18000;"}
+{"soru": "8000 lirayı aşmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price <= 8000;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 11 ve fiyatı 1000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 11\nAND price < 1000;"}
+{"soru": "Fiyat etiketi 8000 TL'yi aşan ürünleri getir.", "sql": "SELECT * FROM products WHERE price > 8000;"}
+{"soru": "25000 TL'nin altında olmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price >= 25000;"}
+{"soru": "9. sıradaki ucuz ürünü bul.", "sql": "SELECT *\nFROM products\nORDER BY price ASC\nLIMIT 1 OFFSET 8;"}
+{"soru": "Stok seviyesi 18'i aşan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock > 18;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 18 ve fiyatı 6000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 18\nAND price < 6000;"}
+{"soru": "Salon kategorisinde stoğu en az 4 ve fiyatı 50000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 4\nAND price < 50000;"}
+{"soru": "Ofis kategorisinde stoğu en az 3 ve fiyatı 3000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 3\nAND price < 3000;"}
+{"soru": "Bütçesi 7000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 7000;"}
+{"soru": "on sekiz bin liradan pahalı olanları bul.", "sql": "SELECT * FROM products WHERE price > 18000;"}
+{"soru": "Stok miktarı 11'in altında ya da fiyatı 20000 lirayı geçen ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock < 11\nOR price > 20000;"}
+{"soru": "Elde 10'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 10;"}
+{"soru": "Fiyat etiketi 6000 TL'yi aşan ürünleri getir.", "sql": "SELECT * FROM products WHERE price > 6000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 10 ve fiyatı 5000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 10\nAND price < 5000;"}
+{"soru": "Ofis kategorisinde stoğu en az 2 ve fiyatı 50000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 2\nAND price < 50000;"}
+{"soru": "pahalı ürünler arasında sekizinci olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 7;"}
+{"soru": "Salon kategorisinde stoğu en az 19 ve fiyatı 50000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 19\nAND price < 50000;"}
+{"soru": "dokuz bin liranın altında fiyatlandırılmış ürünleri göster.", "sql": "SELECT * FROM products WHERE price < 9000;"}
+{"soru": "Bütçesi 10000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 10000;"}
+{"soru": "5000 TL'nin altında olmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price >= 5000;"}
+{"soru": "En çok beş tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 5;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 5 ve fiyatı 8000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 5\nAND price < 8000;"}
+{"soru": "Stoğu en az 13 ve fiyatı 15000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 13\nAND price < 15000;"}
+{"soru": "Salon kategorisinde stoğu en az 12 ve fiyatı 9000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 12\nAND price < 9000;"}
+{"soru": "Hem stoğu 20'den az olmayan hem de fiyatı 3000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 20\nAND price < 3000;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 20 ve fiyatı 20000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 20\nAND price < 20000;"}
+{"soru": "Ofis kategorisinde stoğu en az 15 ve fiyatı 50000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 15\nAND price < 50000;"}
+{"soru": "2 ile 15 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 2 AND 15;"}
+{"soru": "7000 liradan daha yüksek fiyatlı ürünler hangileri?", "sql": "SELECT * FROM products WHERE price > 7000;"}
+{"soru": "Fiyat aralığı 3000-50000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 3000 AND 50000;"}
+{"soru": "Bütçesi 15000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 15000;"}
+{"soru": "Ofis kategorisinde stoğu en az 5 ve fiyatı 5000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 5\nAND price < 5000;"}
+{"soru": "Stok miktarı 6 veya üzeri olup 20000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 6\nAND price < 20000;"}
+{"soru": "Stok seviyesi maksimum 4 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 4;"}
+{"soru": "7 ile 24 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 7 AND 24;"}
+{"soru": "Fiyat etiketi 25000 TL'yi aşan ürünleri getir.", "sql": "SELECT * FROM products WHERE price > 25000;"}
+{"soru": "20000 lirayı geçmeyen değil, 20000 liradan ucuz ürünleri getir.", "sql": "SELECT * FROM products WHERE price < 20000;"}
+{"soru": "Elde 14'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 14;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 19 ve fiyatı 8000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 19\nAND price < 8000;"}
+{"soru": "çok stoklu ürünler arasında ikinci olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 1 OFFSET 1;"}
+{"soru": "Elde 19'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 19;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 20 ve fiyatı 50000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 20\nAND price < 50000;"}
+{"soru": "yirmi bin liradan pahalı olanları bul.", "sql": "SELECT * FROM products WHERE price > 20000;"}
+{"soru": "Elde 1'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 1;"}
+{"soru": "Stok seviyesi maksimum 27 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 27;"}
+{"soru": "25000 lirayı aşmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price <= 25000;"}
+{"soru": "iki bin liranın altında fiyatlandırılmış ürünleri göster.", "sql": "SELECT * FROM products WHERE price < 2000;"}
+{"soru": "En çok on yedi tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 17;"}
+{"soru": "Fiyat aralığı 3000-8000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 3000 AND 8000;"}
+{"soru": "Bursa şehrindeki müşteri kayıtlarını getir.", "sql": "SELECT * FROM customers WHERE city = 'Bursa';"}
+{"soru": "Stoğu en az 1 ve fiyatı 25000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 1\nAND price < 25000;"}
+{"soru": "Stok seviyesi 18'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 18;"}
+{"soru": "Fiyat aralığı 30000-50000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 30000 AND 50000;"}
+{"soru": "Salon kategorisinde stoğu en az 17 ve fiyatı 40000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 17\nAND price < 40000;"}
+{"soru": "Stok seviyesi 19'i aşan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock > 19;"}
+{"soru": "Elde 6'den daha çok bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock > 6;"}
+{"soru": "9 ile 22 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 9 AND 22;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 7 ve fiyatı 7000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 7\nAND price < 7000;"}
+{"soru": "Stok miktarı 7 veya üzeri olup 12000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 7\nAND price < 12000;"}
+{"soru": "Hem stoğu 15'den az olmayan hem de fiyatı 7000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 15\nAND price < 7000;"}
+{"soru": "15000 TL'nin altında olmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price >= 15000;"}
+{"soru": "Elde 5'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 5;"}
+{"soru": "Stok seviyesi 7-9 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 7 AND 9;"}
+{"soru": "Stok seviyesi 8-10 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 8 AND 10;"}
+{"soru": "Ofis kategorisinde stoğu en az 14 ve fiyatı 3000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 14\nAND price < 3000;"}
+{"soru": "az stoklu sıralamasında 6. ürünü göster.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 1 OFFSET 5;"}
+{"soru": "14 ile 22 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 14 AND 22;"}
+{"soru": "Hem stoğu 2'den az olmayan hem de fiyatı 7000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 2\nAND price < 7000;"}
+{"soru": "Fiyatı minimum 8000 lira olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price >= 8000;"}
+{"soru": "beşinci çok stoklu ürün hangisi?", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 1 OFFSET 4;"}
+{"soru": "Minimum 21 adet stoğu bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock >= 21;"}
+{"soru": "Stok seviyesi 20'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 20;"}
+{"soru": "Minimum 19 adet stoğu bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock >= 19;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 4 ve fiyatı 30000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 4\nAND price < 30000;"}
+{"soru": "3000 TL'nin altında olmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price >= 3000;"}
+{"soru": "Fiyat aralığı 5000-18000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 5000 AND 18000;"}
+{"soru": "En çok on iki tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 12;"}
+{"soru": "Hem stoğu 12'den az olmayan hem de fiyatı 40000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 12\nAND price < 40000;"}
+{"soru": "Stok miktarı 15 veya üzeri olup 4000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 15\nAND price < 4000;"}
+{"soru": "Fiyatı maksimum 50000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 50000;"}
+{"soru": "Stoğu 1'den az veya fiyatı 9000 TL'den fazla ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock < 1\nOR price > 9000;"}
+{"soru": "Ofis kategorisinde stoğu en az 18 ve fiyatı 25000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 18\nAND price < 25000;"}
+{"soru": "ucuz sıralamasında 5. ürünü göster.", "sql": "SELECT *\nFROM products\nORDER BY price ASC\nLIMIT 1 OFFSET 4;"}
+{"soru": "bir adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 1;"}
+{"soru": "15 ile 20 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 15 AND 20;"}
+{"soru": "Salon kategorisinde stoğu en az 4 ve fiyatı 4000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 4\nAND price < 4000;"}
+{"soru": "Fiyatı maksimum 18000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 18000;"}
+{"soru": "Stok seviyesi 15-23 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 15 AND 23;"}
+{"soru": "Stok seviyesi 3-27 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 3 AND 27;"}
+{"soru": "En az 5000, en fazla 30000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 5000 AND 30000;"}
+{"soru": "Stok seviyesi 13'i aşan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock > 13;"}
+{"soru": "Fiyatı minimum 2000 lira olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price >= 2000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 18 ve fiyatı 4000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 18\nAND price < 4000;"}
+{"soru": "stoğu en az ilk 3 ürünü bul.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 3;"}
+{"soru": "kırk bin liranın altında fiyatlandırılmış ürünleri göster.", "sql": "SELECT * FROM products WHERE price < 40000;"}
+{"soru": "2000 TL'nin altında olmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price >= 2000;"}
+{"soru": "Elde 8'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 8;"}
+{"soru": "Salon kategorisinde stoğu en az 19 ve fiyatı 18000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 19\nAND price < 18000;"}
+{"soru": "Stok miktarı 13'in altında ya da fiyatı 1000 lirayı geçen ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock < 13\nOR price > 1000;"}
+{"soru": "pahalı ürünler arasında dördüncü olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 3;"}
+{"soru": "Elde 29'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 29;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 2 ve fiyatı 20000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 2\nAND price < 20000;"}
+{"soru": "En az üç tane kalan ürünleri göster.", "sql": "SELECT * FROM products WHERE stock >= 3;"}
+{"soru": "Stoğu en az 8 ve fiyatı 3000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 8\nAND price < 3000;"}
+{"soru": "Salon kategorisinde stoğu en az 14 ve fiyatı 10000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 14\nAND price < 10000;"}
+{"soru": "ucuz ürünler arasında altıncı olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY price ASC\nLIMIT 1 OFFSET 5;"}
+{"soru": "Hem stoğu 6'den az olmayan hem de fiyatı 15000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 6\nAND price < 15000;"}
+{"soru": "Hem stoğu 5'den az olmayan hem de fiyatı 3000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 5\nAND price < 3000;"}
+{"soru": "En çok 23 tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 23;"}
+{"soru": "Stok seviyesi 8-26 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 8 AND 26;"}
+{"soru": "Hem stoğu 12'den az olmayan hem de fiyatı 9000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 12\nAND price < 9000;"}
+{"soru": "on bin liranın altında fiyatlandırılmış ürünleri göster.", "sql": "SELECT * FROM products WHERE price < 10000;"}
+{"soru": "En çok dört tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 4;"}
+{"soru": "Salon kategorisinde stoğu en az 19 ve fiyatı 3000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 19\nAND price < 3000;"}
+{"soru": "Elde 3'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 3;"}
+{"soru": "Stok seviyesi maksimum 23 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 23;"}
+{"soru": "Stok seviyesi maksimum 26 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 26;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 17 ve fiyatı 10000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 17\nAND price < 10000;"}
+{"soru": "altı adetten fazla kalan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock > 6;"}
+{"soru": "Stoğu en az 7 ve fiyatı 9000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 7\nAND price < 9000;"}
+{"soru": "Minimum 2 adet stoğu bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock >= 2;"}
+{"soru": "yirmi adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 20;"}
+{"soru": "Fiyat aralığı 5000-12000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 5000 AND 12000;"}
+{"soru": "12 ile 20 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 12 AND 20;"}
+{"soru": "yedi bin liranın altında fiyatlandırılmış ürünleri göster.", "sql": "SELECT * FROM products WHERE price < 7000;"}
+{"soru": "1000 liradan daha yüksek fiyatlı ürünler hangileri?", "sql": "SELECT * FROM products WHERE price > 1000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 19 ve fiyatı 12000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 19\nAND price < 12000;"}
+{"soru": "Stok seviyesi 11'in altında kalan ürünler hangileri?", "sql": "SELECT * FROM products WHERE stock < 11;"}
+{"soru": "3 ile 16 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 3 AND 16;"}
+{"soru": "Elde 15'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 15;"}
+{"soru": "3'i geçmeyen stok miktarına sahip ürünleri bul.", "sql": "SELECT * FROM products WHERE stock <= 3;"}
+{"soru": "stoğu en az 10 ürünü listele.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 10;"}
+{"soru": "29'i geçmeyen stok miktarına sahip ürünleri bul.", "sql": "SELECT * FROM products WHERE stock <= 29;"}
+{"soru": "Stok miktarı 10 veya üzeri olup 9000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 10\nAND price < 9000;"}
+{"soru": "çok stoklu ürünler arasında onuncu olanı getir.", "sql": "SELECT *\nFROM products\nORDER BY stock DESC\nLIMIT 1 OFFSET 9;"}
+{"soru": "En çok on altı tane bulunan ürünleri listele.", "sql": "SELECT * FROM products WHERE stock <= 16;"}
+{"soru": "En az 18000, en fazla 50000 lira aralığındaki ürünleri getir.", "sql": "SELECT * FROM products WHERE price BETWEEN 18000 AND 50000;"}
+{"soru": "Ofis kategorisinde stoğu en az 11 ve fiyatı 12000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 11\nAND price < 12000;"}
+{"soru": "Ofis kategorisinde stoğu en az 14 ve fiyatı 5000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 14\nAND price < 5000;"}
+{"soru": "Bütçesi 25000 TL'nin altında olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price < 25000;"}
+{"soru": "Ofis kategorisinde stoğu en az 12 ve fiyatı 10000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 12\nAND price < 10000;"}
+{"soru": "18000 TL'nin altında olmayan ürünleri getir.", "sql": "SELECT * FROM products WHERE price >= 18000;"}
+{"soru": "Stok seviyesi maksimum 21 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 21;"}
+{"soru": "Ofis kategorisinde stoğu en az 16 ve fiyatı 20000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 16\nAND price < 20000;"}
+{"soru": "Stok seviyesi 13'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 13;"}
+{"soru": "6000 lirayı geçmeyen değil, 6000 liradan ucuz ürünleri getir.", "sql": "SELECT * FROM products WHERE price < 6000;"}
+{"soru": "Ofis kategorisinde stoğu en az 18 ve fiyatı 30000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Ofis'\nAND stock >= 18\nAND price < 30000;"}
+{"soru": "Stok seviyesi 8-14 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 8 AND 14;"}
+{"soru": "4'i geçmeyen stok miktarına sahip ürünleri bul.", "sql": "SELECT * FROM products WHERE stock <= 4;"}
+{"soru": "Stok miktarı 15'in altında ya da fiyatı 40000 lirayı geçen ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock < 15\nOR price > 40000;"}
+{"soru": "Stok miktarı 2 veya üzeri olup 18000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 2\nAND price < 18000;"}
+{"soru": "Stok seviyesi 22'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 22;"}
+{"soru": "Oturma Grubu kategorisinde stoğu en az 16 ve fiyatı 1000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Oturma Grubu'\nAND stock >= 16\nAND price < 1000;"}
+{"soru": "Stok miktarı 5'in altında ya da fiyatı 1000 lirayı geçen ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock < 5\nOR price > 1000;"}
+{"soru": "Stoğu en az 14 ve fiyatı 3000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 14\nAND price < 3000;"}
+{"soru": "Stok seviyesi maksimum 22 olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock <= 22;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 1 ve fiyatı 40000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 1\nAND price < 40000;"}
+{"soru": "Fiyat aralığı 9000-50000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 9000 AND 50000;"}
+{"soru": "üçüncü pahalı ürün hangisi?", "sql": "SELECT *\nFROM products\nORDER BY price DESC\nLIMIT 1 OFFSET 2;"}
+{"soru": "Salon kategorisinde stoğu en az 9 ve fiyatı 20000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Salon'\nAND stock >= 9\nAND price < 20000;"}
+{"soru": "Fiyat aralığı 3000-9000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 3000 AND 9000;"}
+{"soru": "Yemek Odası kategorisinde stoğu en az 14 ve fiyatı 30000 TL'nin altında olan ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE category = 'Yemek Odası'\nAND stock >= 14\nAND price < 30000;"}
+{"soru": "Fiyat aralığı 5000-50000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 5000 AND 50000;"}
+{"soru": "Hem stoğu 3'den az olmayan hem de fiyatı 12000 TL'nin altında olan ürünleri listele.", "sql": "SELECT *\nFROM products\nWHERE stock >= 3\nAND price < 12000;"}
+{"soru": "Stok seviyesi 14-21 aralığında olan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock BETWEEN 14 AND 21;"}
+{"soru": "6 ile 25 adet arasında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock BETWEEN 6 AND 25;"}
+{"soru": "Stok miktarı 2 veya üzeri olup 6000 liradan ucuz ürünleri getir.", "sql": "SELECT *\nFROM products\nWHERE stock >= 2\nAND price < 6000;"}
+{"soru": "Fiyatı maksimum 40000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price <= 40000;"}
+{"soru": "Stok seviyesi 20'in altında kalan ürünler hangileri?", "sql": "SELECT * FROM products WHERE stock < 20;"}
+{"soru": "3. sıradaki az stoklu ürünü bul.", "sql": "SELECT *\nFROM products\nORDER BY stock ASC\nLIMIT 1 OFFSET 2;"}
+{"soru": "Fiyat aralığı 10000-25000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 10000 AND 25000;"}
+{"soru": "Stok seviyesi 27'den aşağı olmayan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock >= 27;"}
+{"soru": "19'i geçmeyen stok miktarına sahip ürünleri bul.", "sql": "SELECT * FROM products WHERE stock <= 19;"}
+{"soru": "Elde 16'den daha az bulunan ürünleri getir.", "sql": "SELECT * FROM products WHERE stock < 16;"}
+{"soru": "Stoğu en az 2 ve fiyatı 3000 TL'den düşük ürünleri göster.", "sql": "SELECT *\nFROM products\nWHERE stock >= 2\nAND price < 3000;"}
+{"soru": "on adedin altında stoklanan ürünleri bul.", "sql": "SELECT * FROM products WHERE stock < 10;"}
+{"soru": "Fiyat aralığı 10000-15000 TL olan ürünleri bul.", "sql": "SELECT * FROM products WHERE price BETWEEN 10000 AND 15000;"}
